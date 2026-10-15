@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ancomex — Radio, CB & caméras de recul</title>
+  <meta name="description" content="Ancomex srl : radios chasse VHF agréées Belgique, CB 27 MHz, UHF/VHF/PMR 446, kits caméras de recul pour tracteurs et utilitaires, signalisation. Livraison gratuite dès 250 €.">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <!-- SVG icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-radio" viewBox="0 0 24 24"><rect x="6" y="7" width="12" height="15" rx="2"/><path d="M15 7V2M9 12h6M9 16h6"/></symbol>
+    <symbol id="i-antenna" viewBox="0 0 24 24"><path d="M2 12 7 2M7 12l5-10M12 12l5-10M17 12l5-10M4.5 7h15M12 16v6"/></symbol>
+    <symbol id="i-signal" viewBox="0 0 24 24"><path d="M2 20h.01M7 20v-4M12 20v-8M17 20V8M22 4v16"/></symbol>
+    <symbol id="i-triangle" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2M15 18H9M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-return" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  </svg>
+
+  <div class="topbar">
+    <div class="container topbar__in">
+      <a href="tel:+32495577004"><svg class="ic"><use href="#i-phone"/></svg>+32 495 577 004</a>
+      <a href="mailto:info@ancomex.com"><svg class="ic"><use href="#i-mail"/></svg>info@ancomex.com</a>
+      <span class="topbar__note">Livraison gratuite dès 250 €</span>
+    </div>
+  </div>
+
+  <header class="header" id="top">
+    <div class="container header__in">
+      <a class="logo" href="#top" aria-label="Ancomex, accueil">
+        <span class="logo__mark" aria-hidden="true">A</span>
+        <span class="logo__txt">ANCOMEX<small>srl</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#categories">Catégories</a>
+        <a href="#promos">Promotions</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#marques">Marques</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <button class="btn-icon nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav"><svg class="ic"><use href="#i-menu"/></svg></button>
+        <button class="btn-cart" id="cartBtn" aria-label="Ouvrir le panier" aria-controls="cart">
+          <svg class="ic"><use href="#i-cart"/></svg>
+          <span class="btn-cart__label">Panier</span>
+          <span class="badge" id="cartCount" aria-hidden="true">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__in">
+        <div class="hero__copy">
+          <p class="eyebrow">Spécialiste belge depuis des années</p>
+          <h1>Communiquer et voir clair, <span>sur le terrain.</span></h1>
+          <p class="lead">Radios chasse agréées BE, CB 27 MHz, émetteurs UHF/VHF et kits caméras de recul pour tracteurs, engins et utilitaires. Du matériel robuste, testé et conseillé par des pros.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#catalogue">Voir le catalogue <svg class="ic"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost" href="#contact">Demander un conseil</a>
+          </div>
+          <ul class="hero__stats" aria-label="Chiffres clés">
+            <li><strong>70+</strong><span>références</span></li>
+            <li><strong>8</strong><span>marques</span></li>
+            <li><strong>15 j</strong><span>pour changer d'avis</span></li>
+          </ul>
+        </div>
+        <figure class="hero__media">
+          <img src="https://ancomex.be/102-large_default/kit-camera-rm-219-ahd.jpg" alt="Kit caméra de recul RM 219 AHD avec écran et caméra" width="600" height="600" fetchpriority="high">
+          <figcaption class="hero__chip">
+            <span class="hero__chip-tag">-20 €</span>
+            <span><strong>Kit RM 219 AHD</strong><em>399,00 € <s>419,00 €</s></em></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Nos engagements">
+      <div class="container trust__in">
+        <div class="trust__item"><svg class="ic"><use href="#i-truck"/></svg><div><strong>Livraison gratuite</strong><span>à partir de 250 €</span></div></div>
+        <div class="trust__item"><svg class="ic"><use href="#i-return"/></svg><div><strong>Retour produit</strong><span>jusqu'à 15 jours</span></div></div>
+        <div class="trust__item"><svg class="ic"><use href="#i-clock"/></svg><div><strong>Service client</strong><span>lun–ven, 8h–18h</span></div></div>
+        <div class="trust__item"><svg class="ic"><use href="#i-shield"/></svg><div><strong>Matériel agréé</strong><span>radios chasse homologuées BE</span></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="categories" aria-labelledby="cat-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="cat-title">Nos univers</h2>
+          <p>Choisissez une catégorie pour filtrer le catalogue.</p>
+        </div>
+        <div class="cats" id="cats"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="promos" aria-labelledby="promo-title">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <h2 id="promo-title">En promo maintenant</h2>
+            <p>Prix réduits sur une sélection de kits et radios.</p>
+          </div>
+          <a class="link" href="#catalogue" data-filter-promo>Toutes les promos <svg class="ic"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="grid" id="featured"></div>
+      </div>
+    </section>
+
+    <section class="section" id="catalogue" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="catalog-title">Catalogue</h2>
+          <p id="resultCount" role="status" aria-live="polite"></p>
+        </div>
+        <div class="toolbar">
+          <label class="search">
+            <span class="sr-only">Rechercher un produit</span>
+            <svg class="ic"><use href="#i-search"/></svg>
+            <input type="search" id="q" placeholder="Rechercher : TK-2000, John Deere, antenne…" autocomplete="off">
+          </label>
+          <label class="select">
+            <span class="sr-only">Trier par</span>
+            <select id="sort">
+              <option value="pop">Pertinence</option>
+              <option value="asc">Prix croissant</option>
+              <option value="desc">Prix décroissant</option>
+              <option value="promo">Plus forte remise</option>
+            </select>
+          </label>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Filtrer par catégorie"></div>
+        <div class="grid" id="grid"></div>
+        <p class="empty" id="empty" hidden>Aucun produit ne correspond. Essayez un autre terme ou <a href="#contact">contactez-nous</a>.</p>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="marques" aria-labelledby="brand-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="brand-title">Fabricants en vedette</h2>
+          <p>Nous sélectionnons des marques reconnues pour leur fiabilité.</p>
+        </div>
+        <ul class="brands">
+          <li>Ancomex</li><li>Kenwood</li><li>Président</li><li>CRT</li><li>ICOM</li><li>Sirio</li><li>KHIKO</li><li>Peltor</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__info">
+          <h2 id="contact-title">Un projet d'équipement ?</h2>
+          <p>Flotte de tracteurs, société de chasse, entreprise de transport : on vous aide à choisir la bonne radio ou la bonne caméra, et on vous livre rapidement.</p>
+          <ul class="contact__list">
+            <li><svg class="ic"><use href="#i-phone"/></svg><a href="tel:+32495577004">+32 495 577 004</a></li>
+            <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:info@ancomex.com">info@ancomex.com</a></li>
+            <li><svg class="ic"><use href="#i-clock"/></svg><span>Du lundi au vendredi, de 8h à 18h</span></li>
+            <li><svg class="ic"><use href="#i-fb"/></svg><a href="https://www.facebook.com/" target="_blank" rel="noopener">Suivez-nous sur Facebook</a></li>
+          </ul>
+        </div>
+        <form class="form card" id="contactForm" novalidate>
+          <h3>Écrivez-nous</h3>
+          <div class="field">
+            <label for="c-name">Nom</label>
+            <input id="c-name" name="name" autocomplete="name" required>
+            <p class="err" id="c-name-err" hidden>Indiquez votre nom.</p>
+          </div>
+          <div class="field">
+            <label for="c-email">E-mail</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" required>
+            <p class="err" id="c-email-err" hidden>Indiquez une adresse e-mail valide.</p>
+          </div>
+          <div class="field">
+            <label for="c-msg">Message</label>
+            <textarea id="c-msg" name="message" rows="4" required></textarea>
+            <p class="err" id="c-msg-err" hidden>Écrivez votre message.</p>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit">Envoyer le message</button>
+          <p class="hint">Ouvre votre logiciel de messagerie avec le message prêt à envoyer.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__in">
+      <div>
+        <a class="logo logo--light" href="#top"><span class="logo__mark" aria-hidden="true">A</span><span class="logo__txt">ANCOMEX<small>srl</small></span></a>
+        <p>Radio communication, caméras de recul et signalisation pour professionnels et particuliers.</p>
+      </div>
+      <div>
+        <h4>Produits</h4>
+        <ul id="footCats"></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+32495577004">+32 495 577 004</a></li>
+          <li><a href="mailto:info@ancomex.com">info@ancomex.com</a></li>
+          <li>Lun–ven, 8h–18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">© <span id="year"></span> ANCOMEX srl. Tous droits réservés.</div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="cart" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert>
+    <div class="drawer__head">
+      <h2 id="cart-title">Votre panier</h2>
+      <button class="btn-icon" id="cartClose" aria-label="Fermer le panier"><svg class="ic"><use href="#i-x"/></svg></button>
+    </div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot">
+      <div class="ship" id="shipBar"></div>
+      <div class="total"><span>Total TTC</span><strong id="cartTotal">0,00 €</strong></div>
+      <button class="btn btn--primary btn--block" id="checkoutBtn">Passer commande</button>
+    </div>
+  </aside>
+
+  <!-- Order dialog -->
+  <dialog class="modal" id="orderDialog" aria-labelledby="order-title">
+    <form class="form" id="orderForm" method="dialog" novalidate>
+      <div class="modal__head">
+        <h2 id="order-title">Finaliser la commande</h2>
+        <button class="btn-icon" type="button" id="orderClose" aria-label="Fermer"><svg class="ic"><use href="#i-x"/></svg></button>
+      </div>
+      <p class="hint">Nous confirmons la disponibilité et vous envoyons les modalités de paiement sous 24 h ouvrables.</p>
+      <div class="field"><label for="o-name">Nom complet</label><input id="o-name" autocomplete="name" required><p class="err" hidden>Indiquez votre nom.</p></div>
+      <div class="row2">
+        <div class="field"><label for="o-email">E-mail</label><input id="o-email" type="email" autocomplete="email" required><p class="err" hidden>E-mail invalide.</p></div>
+        <div class="field"><label for="o-phone">Téléphone</label><input id="o-phone" type="tel" autocomplete="tel" required><p class="err" hidden>Indiquez un numéro.</p></div>
+      </div>
+      <div class="field"><label for="o-addr">Adresse de livraison</label><textarea id="o-addr" rows="2" autocomplete="street-address" required></textarea><p class="err" hidden>Indiquez l'adresse.</p></div>
+      <div class="summary" id="orderSummary"></div>
+      <button class="btn btn--primary btn--block" type="submit">Envoyer la commande</button>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,3 +1,13 @@
+/* Polices auto-hébergées (SIL Open Font License) — aucun appel à Google */
+@font-face { font-family: "Lexend Mega"; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/lexend-mega-600.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Lexend Mega"; font-style: normal; font-weight: 800; font-display: swap; src: url("fonts/lexend-mega-600.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Public Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/public-sans-400.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Public Sans"; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/public-sans-400.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Public Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/public-sans-400.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Public Sans"; font-style: normal; font-weight: 800; font-display: swap; src: url("fonts/public-sans-400.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Space Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/space-mono-400.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Space Mono"; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/space-mono-700.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 /* Ancomex — UI UX Pro Max: Neubrutalism + Bento Box Grid
    Hard 3px borders, 5px offset shadows, flat saturated colors, no gradients.
    Type: Lexend Mega (display) + Public Sans (body) + Space Mono (data). */
@@ -329,3 +339,31 @@ a.tile:hover .tile__arrow { transform: translateX(6px); }
   .ticker__track li[aria-hidden="true"] { display: none; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Legal pages + compliance UI */
+.legal { padding-block: clamp(40px, 6vw, 72px); }
+.legal__in { max-width: 820px; }
+.legal h1 { font-size: clamp(26px, 4vw, 44px); margin-bottom: 12px; }
+.legal .updated { font: 400 13px var(--font-mono); color: var(--muted); margin-bottom: 32px; }
+.legal h2 { font-size: clamp(18px, 2.2vw, 24px); margin: 40px 0 12px; }
+.legal h3 { font-size: 17px; margin: 24px 0 8px; }
+.legal p, .legal li { max-width: 72ch; }
+.legal p + p { margin-top: 12px; }
+.legal ul { padding-left: 20px; display: grid; gap: 6px; }
+.legal a { color: var(--red); font-weight: 700; text-underline-offset: 3px; }
+.legal .box { background: var(--surface); border: var(--bw) solid var(--line); box-shadow: var(--sh) var(--sh) 0 var(--shadow-c); padding: 20px 24px; margin-top: 16px; }
+.legal table { display: block; overflow-x: auto; width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 15px; }
+.legal th, .legal td { border: 2px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+.legal th { background: var(--yellow); color: var(--ink); }
+.legal__nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; }
+.back { display: inline-flex; gap: 8px; align-items: center; font-weight: 800; text-decoration: none; margin-bottom: 24px; }
+.back .ic { transform: rotate(180deg); }
+.check { display: grid; grid-template-columns: 24px 1fr; gap: 12px; align-items: start; font-size: 15px; }
+.check input { width: 24px; height: 24px; margin: 0; accent-color: var(--red); }
+.check a { color: var(--red); font-weight: 700; }
+.privacy-note { font-size: 13px; color: var(--muted); }
+.privacy-note a { color: inherit; font-weight: 700; }
+.price-note { font-size: 13px; color: var(--muted); margin-top: 24px; }
+.footer__legal { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 12px; }
+.footer__legal a { text-decoration: underline; text-underline-offset: 3px; }
+.footer__id { margin-top: 8px; }

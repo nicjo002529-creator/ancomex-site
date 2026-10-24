@@ -39,7 +39,7 @@
           ${p.desc ? `<p class="product__desc">${esc(p.desc)}</p>` : ""}
           <span class="product__stock">${icon("check")}En stock</span>
           <div class="product__foot">
-            <p class="price">${p.old ? `<s><span class="sr-only">Prix de base </span>${fmt.format(p.old)}</s>` : ""}${fmt.format(p.price)}</p>
+            <p class="price">${p.old ? `<s><span class="sr-only">Prix le plus bas des 30 derniers jours </span>${fmt.format(p.old)}</s>` : ""}${fmt.format(p.price)}</p>
             <button class="add" data-add="${p.id}" aria-label="Ajouter ${esc(p.name)} au panier">${icon("plus")}</button>
           </div>
         </div>
@@ -173,7 +173,7 @@
     form.querySelectorAll("[required]").forEach(input => {
       const field = input.closest(".field");
       const err = field.querySelector(".err");
-      const valid = input.value.trim() && (input.type !== "email" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value));
+      const valid = input.type === "checkbox" ? input.checked : input.value.trim() &&(input.type !== "email" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value));
       field.classList.toggle("invalid", !valid);
       input.setAttribute("aria-invalid", String(!valid));
       if (err) { err.hidden = !!valid; if (!err.id) err.id = input.id + "-err"; input.setAttribute("aria-describedby", err.id); }
@@ -196,7 +196,7 @@
   $("#checkoutBtn").addEventListener("click", () => {
     $("#orderSummary").innerHTML = Object.entries(cart).map(([id, q]) =>
       `<div><span>${q} × ${esc(byId[id].name)}</span><strong>${fmt.format(byId[id].price * q)}</strong></div>`).join("") +
-      `<div><span>Livraison</span><strong>${total() >= FREE_SHIP ? "Gratuite" : "À confirmer"}</strong></div>` +
+      `<div><span>Livraison</span><strong>${total() >= FREE_SHIP ? "Gratuite" : "Selon le poids, confirmée avant paiement"}</strong></div>` +
       `<div><span><strong>Total TTC</strong></span><strong>${fmt.format(total())}</strong></div>`;
     closeCart();
     dlg.showModal();
@@ -207,7 +207,7 @@
     e.preventDefault();
     if (!validate(e.currentTarget)) return;
     const lines = Object.entries(cart).map(([id, q]) => `- ${q} x ${byId[id].name} : ${fmt.format(byId[id].price * q)}`).join("\n");
-    const body = `Bonjour,\n\nJe souhaite commander :\n${lines}\n\nTotal TTC : ${fmt.format(total())}\n\nNom : ${$("#o-name").value}\nE-mail : ${$("#o-email").value}\nTéléphone : ${$("#o-phone").value}\nAdresse de livraison :\n${$("#o-addr").value}\n`;
+    const body = `Bonjour,\n\nJe souhaite commander :\n${lines}\n\nTotal TTC : ${fmt.format(total())}\n\nNom : ${$("#o-name").value}\nE-mail : ${$("#o-email").value}\nTéléphone : ${$("#o-phone").value}\nAdresse de livraison :\n${$("#o-addr").value}\n\nJ'ai lu et accepté les conditions générales de vente.\n`;
     location.href = mailto(`Commande web — ${$("#o-name").value}`, body);
     dlg.close();
     toast("Votre messagerie s'ouvre avec la commande prête à envoyer.");

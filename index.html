@@ -7,10 +7,7 @@
   <meta name="description" content="Ancomex srl : radios chasse VHF agréées Belgique, CB 27 MHz, UHF/VHF/PMR 446, kits caméras de recul pour tracteurs et utilitaires, signalisation. Livraison gratuite dès 250 €.">
   <meta name="theme-color" content="#FFD60A">
   <link rel="icon" href="favicon.svg?v=4" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@600;800&family=Public+Sans:wght@400;500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-v4.css">
+  <link rel="stylesheet" href="styles-v5.css">
 </head>
 <body>
   <a class="skip" href="#main">Aller au contenu</a>
@@ -154,6 +151,7 @@
         </div>
         <div class="chips" id="chips" role="group" aria-label="Filtrer par catégorie"></div>
         <div class="grid" id="grid"></div>
+        <p class="price-note">Prix en euros, TVA belge comprise (TVAC), hors frais de livraison. Prix barré : prix le plus bas pratiqué au cours des 30 jours précédant la réduction.</p>
         <p class="empty" id="empty" hidden>Aucun produit ne correspond. Essayez un autre terme ou <a href="#contact">contactez-nous</a>.</p>
       </div>
     </section>
@@ -200,7 +198,7 @@
             <p class="err" id="c-msg-err" hidden>Écrivez votre message.</p>
           </div>
           <button class="btn btn--primary btn--block" type="submit">Envoyer le message</button>
-          <p class="hint">Ouvre votre logiciel de messagerie avec le message prêt à envoyer.</p>
+          <p class="privacy-note">Le bouton ouvre votre messagerie avec le message prêt à envoyer : rien n&#39;est enregistré sur ce site. Vos données servent uniquement à vous répondre. <a href="confidentialite.html">Politique de confidentialité</a>.</p>
         </form>
       </div>
     </section>
@@ -211,6 +209,7 @@
       <div>
         <a class="logo logo--light" href="#top"><span class="logo__mark" aria-hidden="true">A</span><span class="logo__txt">ANCOMEX<small>srl</small></span></a>
         <p>Radio communication, caméras de recul et signalisation pour professionnels et particuliers.</p>
+        <p class="footer__id">ANCOMEX SRL · Rue Arthur-Patiny 14, 5150 Floreffe, Belgique<br>BCE / TVA : BE 0473.010.701</p>
       </div>
       <div>
         <h4>Produits</h4>
@@ -225,7 +224,16 @@
         </ul>
       </div>
     </div>
-    <div class="container footer__bottom">© <span id="year"></span> ANCOMEX srl. Tous droits réservés.</div>
+    <div class="container footer__bottom">
+      <nav class="footer__legal" aria-label="Informations légales">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">Conditions générales de vente</a>
+        <a href="cgv.html#retractation">Droit de rétractation</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="cookies.html">Cookies</a>
+      </nav>
+      <p>© <span id="year"></span> ANCOMEX SRL. Tous droits réservés.</p>
+    </div>
   </footer>
 
   <!-- Cart drawer -->
@@ -250,7 +258,7 @@
         <h2 id="order-title">Finaliser la commande</h2>
         <button class="btn-icon" type="button" id="orderClose" aria-label="Fermer"><svg class="ic"><use href="#i-x"/></svg></button>
       </div>
-      <p class="hint">Nous confirmons la disponibilité et vous envoyons les modalités de paiement sous 24 h ouvrables.</p>
+      <p class="hint">Votre commande nous est envoyée par e-mail. Nous confirmons la disponibilité, les frais de livraison et les modalités de paiement sous 24 h ouvrables ; le contrat est conclu à cette confirmation.</p>
       <div class="field"><label for="o-name">Nom complet</label><input id="o-name" autocomplete="name" required><p class="err" hidden>Indiquez votre nom.</p></div>
       <div class="row2">
         <div class="field"><label for="o-email">E-mail</label><input id="o-email" type="email" autocomplete="email" required><p class="err" hidden>E-mail invalide.</p></div>
@@ -258,13 +266,18 @@
       </div>
       <div class="field"><label for="o-addr">Adresse de livraison</label><textarea id="o-addr" rows="2" autocomplete="street-address" required></textarea><p class="err" hidden>Indiquez l'adresse.</p></div>
       <div class="summary" id="orderSummary"></div>
-      <button class="btn btn--primary btn--block" type="submit">Envoyer la commande</button>
+      <div class="field">
+        <label class="check" for="o-cgv"><input type="checkbox" id="o-cgv" required><span>J&#39;ai lu et j&#39;accepte les <a href="cgv.html" target="_blank" rel="noopener">conditions générales de vente</a>, y compris les informations sur le <a href="cgv.html#retractation" target="_blank" rel="noopener">droit de rétractation</a>.</span></label>
+        <p class="err" hidden>Vous devez accepter les conditions générales de vente pour commander.</p>
+      </div>
+      <button class="btn btn--primary btn--block" type="submit">Commander avec obligation de paiement</button>
+      <p class="privacy-note">Vos coordonnées servent uniquement à traiter votre commande (exécution du contrat) et à respecter nos obligations comptables. <a href="confidentialite.html" target="_blank" rel="noopener">Politique de confidentialité</a>.</p>
     </form>
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="products.js?v=4"></script>
-  <script src="app.js?v=4"></script>
+  <script src="app-v5.js"></script>
 </body>
 </html>

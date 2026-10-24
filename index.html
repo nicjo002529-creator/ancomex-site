@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ancomex — Radio, CB & caméras de recul</title>
   <meta name="description" content="Ancomex srl : radios chasse VHF agréées Belgique, CB 27 MHz, UHF/VHF/PMR 446, kits caméras de recul pour tracteurs et utilitaires, signalisation. Livraison gratuite dès 250 €.">
-  <meta name="theme-color" content="#0F172A">
-  <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+  <meta name="theme-color" content="#FFD60A">
+  <link rel="icon" href="favicon.svg?v=4" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@600;800&family=Public+Sans:wght@400;500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <a class="skip" href="#main">Aller au contenu</a>
@@ -73,39 +73,38 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero__in">
-        <div class="hero__copy">
-          <p class="eyebrow">Spécialiste belge depuis des années</p>
-          <h1>Communiquer et voir clair, <span>sur le terrain.</span></h1>
-          <p class="lead">Radios chasse agréées BE, CB 27 MHz, émetteurs UHF/VHF et kits caméras de recul pour tracteurs, engins et utilitaires. Du matériel robuste, testé et conseillé par des pros.</p>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container bento">
+        <div class="tile tile--hero">
+          <p class="eyebrow">Matériel de terrain · Belgique</p>
+          <h1 id="hero-title">Parler clair.<br>Voir derrière.<br><mark>Bosser tranquille.</mark></h1>
+          <p class="lead">Radios chasse agréées BE, CB 27 MHz, émetteurs UHF/VHF et kits caméras de recul pour tracteurs, engins et utilitaires. Robuste, testé, conseillé par des pros.</p>
           <div class="hero__cta">
             <a class="btn btn--primary" href="#catalogue">Voir le catalogue <svg class="ic"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn--ghost" href="#contact">Demander un conseil</a>
+            <a class="btn btn--light" href="#contact">Demander un conseil</a>
           </div>
-          <ul class="hero__stats" aria-label="Chiffres clés">
-            <li><strong>70+</strong><span>références</span></li>
-            <li><strong>8</strong><span>marques</span></li>
-            <li><strong>15 j</strong><span>pour changer d'avis</span></li>
-          </ul>
         </div>
-        <figure class="hero__media">
+        <a class="tile tile--product" href="#catalogue" data-cat="camera">
+          <span class="sticker">-20 €</span>
           <img src="https://ancomex.be/102-large_default/kit-camera-rm-219-ahd.jpg" alt="Kit caméra de recul RM 219 AHD avec écran et caméra" width="600" height="600" fetchpriority="high">
-          <figcaption class="hero__chip">
-            <span class="hero__chip-tag">-20 €</span>
-            <span><strong>Kit RM 219 AHD</strong><em>399,00 € <s>419,00 €</s></em></span>
-          </figcaption>
-        </figure>
+          <span class="tile__caption"><strong>Kit RM 219 AHD</strong><span class="mono">399,00 € <s>419,00 €</s></span></span>
+        </a>
+        <div class="tile tile--stat tile--red"><strong class="mono">70+</strong><span>références en stock</span></div>
+        <a class="tile tile--stat tile--black" href="#catalogue" data-cat="chasse"><strong class="mono">TK-2000</strong><span>Radio chasse agréée BE dès 169 €</span><svg class="ic tile__arrow"><use href="#i-arrow"/></svg></a>
       </div>
     </section>
 
-    <section class="trust" aria-label="Nos engagements">
-      <div class="container trust__in">
-        <div class="trust__item"><svg class="ic"><use href="#i-truck"/></svg><div><strong>Livraison gratuite</strong><span>à partir de 250 €</span></div></div>
-        <div class="trust__item"><svg class="ic"><use href="#i-return"/></svg><div><strong>Retour produit</strong><span>jusqu'à 15 jours</span></div></div>
-        <div class="trust__item"><svg class="ic"><use href="#i-clock"/></svg><div><strong>Service client</strong><span>lun–ven, 8h–18h</span></div></div>
-        <div class="trust__item"><svg class="ic"><use href="#i-shield"/></svg><div><strong>Matériel agréé</strong><span>radios chasse homologuées BE</span></div></div>
-      </div>
+    <section class="ticker" aria-label="Nos engagements">
+      <ul class="ticker__track">
+        <li><svg class="ic"><use href="#i-truck"/></svg>Livraison gratuite dès 250 €</li>
+        <li><svg class="ic"><use href="#i-return"/></svg>Retour jusqu&#39;à 15 jours</li>
+        <li><svg class="ic"><use href="#i-clock"/></svg>Service client lun–ven, 8h–18h</li>
+        <li><svg class="ic"><use href="#i-shield"/></svg>Radios chasse homologuées BE</li>
+        <li aria-hidden="true"><svg class="ic"><use href="#i-truck"/></svg>Livraison gratuite dès 250 €</li>
+        <li aria-hidden="true"><svg class="ic"><use href="#i-return"/></svg>Retour jusqu&#39;à 15 jours</li>
+        <li aria-hidden="true"><svg class="ic"><use href="#i-clock"/></svg>Service client lun–ven, 8h–18h</li>
+        <li aria-hidden="true"><svg class="ic"><use href="#i-shield"/></svg>Radios chasse homologuées BE</li>
+      </ul>
     </section>
 
     <section class="section" id="categories" aria-labelledby="cat-title">
@@ -265,7 +264,7 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="products.js?v=2"></script>
-  <script src="app.js?v=2"></script>
+  <script src="products.js?v=4"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>

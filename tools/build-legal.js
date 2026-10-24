@@ -24,7 +24,7 @@ const page = (file, title, desc, body) => {
   <meta name="description" content="${desc}">
   <meta name="theme-color" content="#FFD60A">
   <link rel="icon" href="favicon.svg?v=4" type="image/svg+xml">
-  <link rel="stylesheet" href="styles-v5.css">
+  <link rel="stylesheet" href="styles-v6.css">
 </head>
 <body>
   <a class="skip" href="#main">Aller au contenu</a>
@@ -34,8 +34,7 @@ const page = (file, title, desc, body) => {
   <header class="header">
     <div class="container header__in">
       <a class="logo" href="index.html" aria-label="Ancomex, accueil">
-        <span class="logo__mark" aria-hidden="true">A</span>
-        <span class="logo__txt">ANCOMEX<small>srl</small></span>
+        <img class="logo__img" src="img/ancomex-logo.jpg" alt="Ancomex" width="160" height="91">
       </a>
     </div>
   </header>
